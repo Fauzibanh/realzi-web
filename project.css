@@ -3,7 +3,7 @@
 }
 
 .style-btn {
-  background-color: #07c777;
+  background-color: #000000;
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -20,7 +20,7 @@
 }
 
 .style-btn-games {
-  background-color: #07c7bd;
+  background-color: #000000;
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -52,13 +52,69 @@ body {
 }
 .jumbotron {
   padding-top: 6rem;
-  background-color: #e2edff;
+  background-color: #808080;
 }
 #project {
-  background-color: #e2edff;
+  background-color: #808080;
 }
-.footer {
-  background-color: #07a5a5;
+.abc{
+    position: bottom;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+    right: 15px;
+    bottom: 15px;
+  }
+  .a{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+  }
+  .a i{
+    line-height: 80px;
+    font-size: 26px;
+    transition: 0.2s linear;
+  }
+  .a:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+  }
+  .a::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+  .a:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  @keyframes aaa {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+}
+footer {
+  background-color: #000000;
 }
 
 .fs-2 {
